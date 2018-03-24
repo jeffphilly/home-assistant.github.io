@@ -165,6 +165,12 @@ Stops a playing ringtone immediately.
 
 #### {% linkable_title Service `xiaomi_aqara.add_device` %}
 
+| Service data attribute    | Optional | Description                                           |
+|---------------------------|----------|-------------------------------------------------------|
+| `gw_mac`                  |       no | MAC address of the Xiaomi Aqara Gateway               |
+
+#### {% linkable_title Service `xiaomi_aqara.add_device` %}
+
 Enables the join permission of the Xiaomi Aqara Gateway for 30 seconds. A new device can be added afterwards by pressing the pairing button once.
 
 | Service data attribute    | Optional | Description                                           |
@@ -173,7 +179,7 @@ Enables the join permission of the Xiaomi Aqara Gateway for 30 seconds. A new de
 
 #### {% linkable_title Service `xiaomi_aqara.remove_device` %}
 
-Removes a specific device. The removal is required if a device shall be paired with another gateway.
+Removes a specific device. The removal is required if a device shall be paired with another gateway.The device must be removed from the app prior to removing from Home Assistant
 
 | Service data attribute    | Optional | Description                                           |
 |---------------------------|----------|-------------------------------------------------------|
